@@ -47,9 +47,9 @@ const SignUp = () => {
     formData.append("password", password);
     formData.append("profileImage", profilePic); // ✅ this must match multer name
 
-    // "https://expensetracker-backend-r3l8.onrender.com/api/v1/auth/register"
+   
 
-    const response = await fetch("http://localhost:8000/api/v1/auth/register", {
+    const response = await fetch("https://expense-tracker-g9nw.onrender.com/api/v1/auth/register", {
       method: "POST",
       body: formData,
     });
